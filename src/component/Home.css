@@ -1,0 +1,133 @@
+.addbtn {
+    margin: 0 20px;
+    background-color: #101010;
+    border-radius: 10px;
+}
+
+.btngroup {
+    margin: 0 20px;
+    background-color: #F7F7F7;
+}
+
+.btn {
+    display: flex !important;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn:active,
+.btn:focus {
+    background-color: white;
+    box-shadow: 2px 2px 5px lightgrey;
+}
+
+.gridcard {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    height: auto;
+    padding: 5px;
+}
+
+.griditems {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    /* align-items: center; */
+}
+
+.status {
+    display: flex;
+    align-items: center;
+}
+
+.count {
+    background-color: white;
+    /* padding: 2px 4px;
+    border-radius: 50px !important;
+    font-size: smaller; */
+}
+
+.taskaddbtn {
+    border: 2px dashed blue;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    color: blue;
+    background-color: #E5EAF9;
+    text-decoration: none;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+     display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.modal-content {
+    padding: 20px;
+    border-radius: 10px;
+    animation: zoomIn 0.3s ease;
+    margin-top: 1px !important;
+    width: max-content;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.kanban-header {
+    text-align: center;
+    padding: 18px;
+    background: white;
+    margin: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.kanban-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #1f2937;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .gridcontainer {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-overlay {
+        overflow-y: scroll;
+    }
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:780px) {
+    .gridcontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+      .modal-overlay {
+        overflow-y: scroll;
+    }
+}

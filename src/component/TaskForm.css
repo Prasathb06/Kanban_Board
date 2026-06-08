@@ -1,0 +1,137 @@
+.formcontroller {
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px gray;
+    background: rgb(241, 238, 238) !important;
+}
+
+.errormsg {
+    color: red;
+    font-size: small;
+    object-fit: contain;
+}
+
+.team img {
+    object-fit: cover;
+    height: 600px !important;
+    max-width: 420px;
+}
+
+.my-popup {
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.my-title {
+    color: #4f46e5;
+    font-size: 24px;
+}
+
+.addicon {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.my-button {
+    background-color: #4f46e5 !important;
+    border-radius: 8px !important;
+    padding: 8px 20px !important;
+}
+
+.textarea {
+    border: 1px solid lightgrey;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.heading {
+    font-size: 25px;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.deletebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    border-radius: 50%;
+
+}
+
+.deletebtn:hover {
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 200;
+    z-index: 40;
+}
+
+.form-control::file-selector-button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-control:hover::file-selector-button {
+    background-color: #4338ca !important;
+}
+
+.focuscontrol:focus {
+    box-shadow: none;
+    border: 2px solid #4a3af5 !important;
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+
+    .colour {
+        color: black;
+    }
+
+    .formcontroller {
+        color: white !important;
+        width: 300px;
+        height: auto;
+
+    }
+
+    .textarea {
+        margin-bottom: 0%;
+        color: black;
+    }
+
+    .from-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .from-btn button {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .submit {
+        background-color: #4F39F6;
+        padding: 10px 23px !important;
+
+    }
+
+    .cancel {
+        background-color: #4F39F6;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,199 @@
+.card {
+    margin: auto auto 10px auto;
+    padding: 4px;
+    border-radius: 20px;
+    /* width: auto!important; */
+    /* box-shadow: 5px 5px 10px white; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.type {
+    padding-bottom: 13px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.low {
+    color: rgb(2, 2, 223);
+    background-color: #dae2fa;
+    font-size: 15px !important;
+}
+
+.medium {
+    color: orange;
+    background-color: lightgoldenrodyellow;
+    font-size: 15px !important;
+}
+
+.high {
+    color: rgb(244, 25, 25);
+    background-color: rgb(251, 189, 189);
+    font-size: 15px !important;
+}
+
+.back {
+    color: orange;
+    background-color: lightgoldenrodyellow;
+    font-size: 15px !important;
+}
+
+.ui {
+    color: rgb(73, 3, 73) !important;
+    background-color: rgb(209, 215, 220) !important;
+    font-size: 15px !important;
+}
+
+.front {
+    color: rgb(23, 220, 23) !important;
+    background-color: rgb(214, 253, 214) !important;
+    font-size: 15px !important;
+}
+
+.qa {
+    color: rgb(8, 70, 8) !important;
+    background-color: rgb(203, 247, 203) !important;
+    font-size: 15px !important;
+}
+
+.dev {
+    color: rgb(249, 60, 91) !important;
+    background-color: rgb(250, 189, 199) !important;
+    font-size: 15px !important;
+}
+
+.priority {
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.tech {
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.three-dot {
+    color: gray;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 4px !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.three-dot:hover,
+.three-dot:focus,
+.three-dot:active {
+    color: gray !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.three-dot::after {
+    display: none !important;
+}
+
+.three-dot-menu {
+    border: none !important;
+    min-width: 100px !important;
+    text-align: center;
+    border-radius: 15px !important;
+    box-shadow: 0 3px 7px lightgrey;
+}
+
+.delete {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contents {
+    border: 1px solid black;
+}
+
+.iconsD {
+    color: red;
+}
+
+.iconsE {
+    color: blue;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.description {
+    color: gray;
+}
+
+.tooltips .tooltip-inner {
+    background-color: rgb(17, 17, 253) !important;
+    color: white;
+}
+
+.load {
+    /* font-size: 15px !important; */
+    height: 20px;
+}
+
+.progressive {
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    height: 10px !important;
+}
+
+.bar .progress-bar {
+    cursor: pointer;
+  background: linear-gradient(to right, #17C6C1, #3f27f2);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+}
+
+.information {
+    display: flex;
+    gap: 10px;
+}
+
+.filebtn {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.messagebtn {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+    .card {
+        /* margin: 5px 5px; */
+        padding: 2px;
+        max-width: 300px !important;
+
+    }
+
+    .description:hover {
+        width: 250px;
+    }
+}
